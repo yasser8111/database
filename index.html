@@ -3,31 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>إدارة المنتجات</title>
-    <link rel="stylesheet" href="/index.css">
+    <title>طلب المنتجات</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>إدارة المنتجات</h1>
+    <h1>طلب المنتجات</h1>
 
-    <!-- نموذج إضافة منتج جديد -->
-    <form id="addProductForm" enctype="multipart/form-data">
+    <form id="orderForm">
         <label for="name">اسم المنتج:</label>
         <input type="text" id="name" name="name" required>
-        <br>
-        <label for="img">تحميل الصورة:</label>
-        <input type="file" id="img" name="img" required>
         <br>
         <label for="price">السعر:</label>
         <input type="number" id="price" name="price" step="0.01" required>
         <br>
-        <button type="submit">إضافة المنتج</button>
+        <button type="submit">طلب المنتج</button>
     </form>
 
-    <div id="products" class="products">
-        <!-- المنتجات سيتم إضافتها هنا بواسطة JavaScript -->
+    <div id="products">
+        <!-- المنتجات سيتم عرضها هنا -->
     </div>
 
-    <!-- استدعاء ملف جافا سكريبت -->
+    <!-- إضافة Firebase JS SDK -->
+    <script src="https://www.gstatic.com/firebasejs/9.1.3/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.1.3/firebase-database.js"></script>
+    
     <script src="/mine.js"></script>
 </body>
 </html>
