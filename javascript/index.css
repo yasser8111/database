@@ -1,0 +1,24 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.border{
+    border: 3px solid red;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 600px;
+}
+.products{
+    display: flex;
+    width: 200px;
+    height: 80%;
+    margin: 0 auto;
+    background-color: rgb(214, 214, 214);
+    border-radius: 10px;
+    border-bottom: 5px solid black;
+}

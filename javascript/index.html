@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>إدارة المنتجات</title>
+    <link rel="stylesheet" href="/index.css">
+</head>
+<body>
+    <h1>إدارة المنتجات</h1>
+
+    <!-- نموذج إضافة منتج جديد -->
+    <form id="addProductForm" enctype="multipart/form-data">
+        <label for="name">اسم المنتج:</label>
+        <input type="text" id="name" name="name" required>
+        <br>
+        <label for="img">تحميل الصورة:</label>
+        <input type="file" id="img" name="img" required>
+        <br>
+        <label for="price">السعر:</label>
+        <input type="number" id="price" name="price" step="0.01" required>
+        <br>
+        <button type="submit">إضافة المنتج</button>
+    </form>
+
+    <div id="products" class="products">
+        <!-- المنتجات سيتم إضافتها هنا بواسطة JavaScript -->
+    </div>
+
+    <!-- استدعاء ملف جافا سكريبت -->
+    <script src="/mine.js"></script>
+</body>
+</html>
